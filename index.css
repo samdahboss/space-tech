@@ -1,0 +1,44 @@
+body {
+  background: url("./assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/*Navigation classes*/
+.nav-container {
+    padding: 1.25em 0; 
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 0.625em;
+    padding: 1.25em 6.25em; 
+    background-color: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(80%);
+  }
+  
+  .nav-link a {
+    text-decoration: none !important;
+    color: white;
+  }
+  
+/* Tab Responsiveness */
+@media (max-width: 820px) {
+  body {
+    background: url("./assets/home/background-home-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/*Mobile Responsiveness*/
+@media (max-width: 570px) {
+  body {
+    background: url("./assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

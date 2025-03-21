@@ -16,3 +16,147 @@
 .fw-bold {
   font-weight: 700;
 }
+
+/*Header*/
+/*Navigation classes*/
+.nav-container {
+  padding: 2em 0 0em;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 0.625em;
+  padding: 0em 4.25em 0em 9.25em;
+  background-color: #ffffff0d;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  max-width: 736px;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 1.25em 0em;
+  text-transform: uppercase;
+}
+
+.nav-link.active {
+  border-bottom: 3px solid #fff;
+}
+.nav-link a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.nav-link a span {
+  margin-right: 0.2em;
+}
+
+.brand-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 50vw;
+  max-width: 736px;
+  padding: 2em;
+}
+
+.nav-line {
+  max-width: 560px;
+  width: 100%;
+  height: 1px;
+  opacity: 25%;
+  margin-left: 2em;
+  z-index: 20;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Tab Responsiveness */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0em;
+  }
+  .brand-icon {
+    margin-left: 0;
+    padding: 1em;
+  }
+  .nav-line {
+    display: none;
+  }
+  .nav-links {
+    width: 90%;
+    max-width: 640px;
+    padding: 0em 1.25em 0em 3.25em;
+  }
+  .brand-icon {
+    width: 10%;
+  }
+}
+
+/*Mobile Responsiveness*/
+@media (max-width: 570px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding-left: 2em;
+    padding-top: 5em;
+    height: 100vh;
+    background-color: #ffffff0d;
+    backdrop-filter: blur(25px);
+    width: 70vw;
+  }
+  .mobile-nav--hidden.mobile-nav {
+    display: none;
+  }
+  .nav-links {
+    width: 100%;
+    max-width: none;
+  }
+
+  .nav-link {
+    padding: 0.5em 0em;
+  }
+  .nav-link.active {
+    border-bottom: none;
+    border-right: 3px solid #fff;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 1em;
+    top: 1.25em;
+    z-index: 100;
+    background: url("./assets/shared/icon-hamburger.svg");
+    background-size: cover;
+    outline: none;
+    border: none;
+  }
+}

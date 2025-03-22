@@ -65,9 +65,8 @@ main {
 .carousel-controllers {
   position: absolute;
   bottom: 0;
-  height: 10vh;
-  width: 100vw;
-  padding: 0em 5em;
+  height: 20vh;
+  width: calc(100vw - 10em);
   background: linear-gradient(#0b0e1705 0%, #0b0e17 54%);
 }
 
@@ -96,37 +95,84 @@ main {
   background-color: #fff;
 }
 
+.mobile-crew-nav{
+  display: none;
+}
+
 @media (max-width: 940px) {
   body {
     background-image: url("../assets/crew/background-crew-tablet.jpg");
   }
+  .crew-container{
+    padding: 2em 2em;
+    height: 90%;
+    justify-content: center;
+  }
 
+  .crew-content {
+    padding: 2em 0em;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* height:  */
+  }
+
+  .crew-text{
+    justify-content: start;
+    height: fit-content;
+  }
   .crew-title {
     padding: 0em 2em;
     font-size: 1.3em;    
   }
 
-  .crew-content {
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    text-align: center;
-    padding: 3em 0em;
+  .crew-text {
+    max-width: 512px;
+    gap: 2.5em;
   }
+
+  .crew-subtitle{
+    font-size: 1.5em;
+  }
+
+  .crew-main-title{
+    font-size: 2.5em;
+  }
+
+  .crew-description {
+    line-height: 150%;
+  }
+
+  
 
   .crew-left {
     width: 100%;
+    max-width: 512px;
     align-items: center;
-    padding: 2em 0em;
+    padding: 0em 0em;
   }
 
   .crew-right img {
     max-width: 501px;
-    max-height: 494px;
+    max-height: 446px;
+    height: 100%;
   }
 
   .destination-main-title {
     font-size: 1.3em;
+  }
+
+  .carousel-controllers{
+    width: calc(100vw - 4em);
+    height: auto;
+    position: relative;
+    background: none;
+
+  }
+
+  #crew-nav {
+    justify-content: center;
   }
 }
 
@@ -138,5 +184,33 @@ main {
   main {
     padding: 1em 1em 0em;
     height: 100%;
+  }
+
+  .crew-container {
+    height: 100%;
+    padding: 4em 0em;
+  }
+
+  .crew-content{
+    padding: 2em 4em;
+  }
+  .crew-text{
+    gap: 1em;
+  }
+  .crew-title{
+    text-align: center;
+  }
+  .crew-description{
+    line-height: 120%;
+  }
+  .crew-main-title{
+    font-size: 1.5em;
+  }
+  .crew-right img{
+    max-width: 271px;
+  }
+
+  #crew-nav{
+    display: flex;
   }
 }

@@ -6,15 +6,36 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
-  font-size: 16px;
+
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+}
+
+/*font*/
+.barlow-condensed {
+  font-family: "Barlow Condensed", sans-serif !important;
+}
+
+.bellefair {
+  font-family: "Bellefair", serif !important;
+}
+
+.barlow {
+  font-family: "Barlow", sans-serif;
 }
 
 /*utility classes*/
 .fw-bold {
   font-weight: 700;
+}
+
+.fw-normal {
+  font-weight: 400;
 }
 
 /*Header*/

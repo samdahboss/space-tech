@@ -1,5 +1,5 @@
 body {
-  background: url("./assets/home/background-home-desktop.jpg");
+  background: url("../assets/home/background-home-desktop.jpg");
   
 }
 
@@ -62,7 +62,7 @@ body {
 /* Tab Responsiveness */
 @media (max-width: 768px) {
   body {
-    background: url("./assets/home/background-home-tablet.jpg");
+    background: url("../assets/home/background-home-tablet.jpg");
   }
 
   .hero-content {
@@ -98,7 +98,7 @@ body {
 /*Mobile Responsiveness*/
 @media (max-width: 570px) {
   body {
-    background: url("./assets/home/background-home-mobile.jpg");
+    background: url("../assets/home/background-home-mobile.jpg");
   }
   .hero-subtitle{
     font-size: 2em;

@@ -202,7 +202,7 @@ main {
     right: 1em;
     top: 1.25em;
     z-index: 100;
-    background: url("./assets/shared/icon-hamburger.svg");
+    background: url("../assets/shared/icon-hamburger.svg");
     background-size: cover;
     outline: none;
     border: none;

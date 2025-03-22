@@ -1,5 +1,5 @@
 body {
-  background-image: url("./assets/destination/background-destination-desktop.jpg");
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
 }
 main {
   padding: 2em 2em 1em;
@@ -116,7 +116,7 @@ main {
 /*Tablet Responsiveness*/
 @media (max-width: 940px) {
   body {
-    background-image: url("./assets/destination/background-destination-tablet.jpg");
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
   }
 
   .destination-title {
@@ -166,18 +166,18 @@ main {
 
 @media (max-width: 570px) {
   body {
-    background-image: url("./assets/destination/background-destination-mobile.jpg");
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
   }
 
-  main{
+  main {
     padding: 1em 1em 0em;
     height: 100%;
   }
 
-  .destination-container{
+  .destination-container {
     height: 100%;
   }
-  .destination-content{
+  .destination-content {
     justify-content: center;
   }
   .destination-title {
@@ -186,25 +186,25 @@ main {
     text-align: center;
   }
 
-  .destination-main-title{
+  .destination-main-title {
     font-size: 4em;
   }
-  .destination-right-content{
+  .destination-right-content {
     max-width: 327px;
   }
-  .stats{
+  .stats {
     flex-direction: column;
     gap: 1em;
   }
 
-  .stats div{
+  .stats div {
     width: 100%;
   }
 
-  .stats-title{
+  .stats-title {
     font-size: 0.8em;
   }
-  .stats-details{
+  .stats-details {
     font-size: 1.5em;
   }
 }

@@ -13,7 +13,7 @@ const statsDetails = document.querySelectorAll(".stats-details");
 
 // Fetch data from JSON file
 async function fetchData() {
-  const data = await fetch("./data.json")
+  const data = await fetch("../data.json")
     .then((data) => {
       return data.json();
     })

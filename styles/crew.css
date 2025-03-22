@@ -66,6 +66,8 @@ main {
   position: absolute;
   bottom: 0;
   height: 20vh;
+  display: flex;
+  align-items: center;
   width: calc(100vw - 10em);
   background: linear-gradient(#0b0e1705 0%, #0b0e17 54%);
 }

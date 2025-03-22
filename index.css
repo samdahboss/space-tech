@@ -1,15 +1,6 @@
 body {
   background: url("./assets/home/background-home-desktop.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  width: 100vw;
-  height: 100vh;
-}
-
-main {
-  padding: 4em 6em;
-  height: 80%;
+  
 }
 
 .hero-container {
@@ -72,12 +63,6 @@ main {
 @media (max-width: 768px) {
   body {
     background: url("./assets/home/background-home-tablet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  main{
-    height: 90%;
-    padding: 4em 0em 2em;
   }
 
   .hero-content {
@@ -114,11 +99,6 @@ main {
 @media (max-width: 570px) {
   body {
     background: url("./assets/home/background-home-mobile.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  main{
-    padding: 2em 2em 1em;
   }
   .hero-subtitle{
     font-size: 2em;

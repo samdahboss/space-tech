@@ -14,6 +14,16 @@
 body {
   font-family: "Barlow", sans-serif;
   font-size: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  padding:4em 6em;
+  height: 80%;
 }
 
 /*font*/
@@ -45,6 +55,7 @@ body {
   display: flex;
   justify-content: end;
   position: relative;
+  z-index: 60;
 }
 
 .nav-links {
@@ -109,6 +120,15 @@ body {
 
 /* Tab Responsiveness */
 @media (max-width: 768px) {
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  main{
+    height: 90%;
+    padding: 4em 2em 2em;
+  }
+
   .nav-container {
     padding: 0em;
   }
@@ -131,6 +151,13 @@ body {
 
 /*Mobile Responsiveness*/
 @media (max-width: 570px) {
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  main{
+    padding: 2em 2em 1em;
+  }
   .nav-links {
     display: none;
   }

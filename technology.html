@@ -12,16 +12,99 @@
     />
 
     <title>Frontend Mentor | Space tourism website</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/technology.css" />
   </head>
   <body>
-    00 Home 01 Destination 02 Crew 03 Technology 03 Space launch 101 1 2 3 The
-    terminology... Launch vehicle A launch vehicle or carrier rocket is a
-    rocket-propelled vehicle used to carry a payload from Earth's surface to
-    space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the
-    most powerful in operation. Standing 150 metres tall, it's quite an
-    awe-inspiring sight on the launch pad!
+    <header>
+      <nav class="nav-container">
+        <div class="brand-icon">
+          <img src="./assets/shared/logo.svg" alt="Space tourism" />
+          <hr class="nav-line" />
+        </div>
 
-    <script src="scripts.js"></script>
+        <ul class="nav-links">
+          <li class="nav-link">
+            <a href="./index.html"><span class="fw-bold">00</span> Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="./destination.html"
+              ><span class="fw-bold">01</span> Destination</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="./crew.html"><span class="fw-bold">02</span> Crew</a>
+          </li>
+          <li class="nav-link active">
+            <a href="./technology.html"
+              ><span class="fw-bold">03</span> Technology</a
+            >
+          </li>
+        </ul>
+
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle"></button>
+
+        <div class="mobile-nav mobile-nav--hidden" id="mobile-nav">
+          <ul class="mobile-nav-links">
+            <li class="nav-link">
+              <a href="./index.html"><span class="fw-bold">00</span> Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="./destination.html"
+                ><span class="fw-bold">01</span> Destination</a
+              >
+            </li>
+            <li class="nav-link">
+              <a href="./crew.html"><span class="fw-bold">02</span> Crew</a>
+            </li>
+            <li class="nav-link active">
+              <a href="./technology.html"
+                ><span class="fw-bold">03</span> Technology</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main-technology">
+      <div class="technology-container">
+        <h1 class="technology-title"><span>03</span> Space launch 101</h1>
+        <div class="technology-content">
+          <div class="technology-left">
+            <ul class="nav-links bellefair" id="technology-nav">
+              <li class="nav-link active">1</li>
+              <li class="nav-link">2</li>
+              <li class="nav-link">3</li>
+            </ul>
+            <div class="technology-text">
+              <h3 class="technology-subtitle bellefair fw-normal">
+                The terminology...
+              </h3>
+              <h1 class="technology-main-title bellefair fw-normal">
+                Launch vehicle
+              </h1>
+              <p class="technology-description">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </p>
+            </div>
+          </div>
+
+          <div class="technology-right">
+            <!-- <img
+              src="./assets/technology/image-launch-vehicle-portrait.jpg"
+              alt="landing vehicle"
+            /> -->
+            <div class="technology-image"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script/index.js"></script>
+    <script src="./script/technology.js"></script>
   </body>
 </html>

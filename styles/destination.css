@@ -192,6 +192,18 @@ main {
   .destination-right-content {
     max-width: 327px;
   }
+
+  #destination-nav {
+    display: flex;
+    margin-top: -2em;
+  }
+  #destination-nav .nav-link {
+    padding: 0.3em 0em;
+  }
+  #destination-nav .nav-link.active{
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
   .stats {
     flex-direction: column;
     gap: 1em;

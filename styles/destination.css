@@ -189,8 +189,14 @@ main {
   .destination-main-title {
     font-size: 2.5em;
   }
+
+  .destination-description{
+    line-height: 100%;
+    font-size: 0.8em;
+  }
   .destination-right-content {
     max-width: 327px;
+    gap: 1em;
   }
 
   #destination-nav {
@@ -206,7 +212,7 @@ main {
   }
   .stats {
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
   }
 
   .stats div {

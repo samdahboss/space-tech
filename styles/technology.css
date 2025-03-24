@@ -184,15 +184,17 @@ main#main-technology {
 
   .technology-container {
     height: 100%;
-    gap: 2em;
+    gap: 1em;
+
   }
 
   .technology-left {
     padding: 0em 2em;
+    gap: 0.5em;
   }
 
   .technology-subtitle {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .technology-main-title {
@@ -200,14 +202,16 @@ main#main-technology {
   }
 
   .technology-description {
-    line-height: 120%;
+    line-height: 100%;
   }
 
   #technology-nav {
     display: flex;
   }
   #technology-nav .nav-link {
-    padding: 0.3em 0em;
+    padding: 0em 0em;
+    width: 2em;
+    height: 2em;
   }
   #technology-nav .nav-link.active{
     border-right: none;

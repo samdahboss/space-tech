@@ -81,6 +81,7 @@ main {
 .nav-link.active {
   border-bottom: 3px solid #fff;
 }
+
 .nav-link:hover:not(.active) {
   border-bottom: 3px solid #ffffff5c;
 }
@@ -198,6 +199,11 @@ main {
   .nav-link.active {
     border-bottom: none;
     border-right: 3px solid #fff;
+  }
+
+  .nav-link:hover:not(.active){
+    border-bottom: none;
+    border-right: 3px solid #ffffff5c;
   }
   .mobile-nav-toggle {
     display: block;

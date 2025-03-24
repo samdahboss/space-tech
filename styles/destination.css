@@ -36,8 +36,8 @@ main {
 }
 
 .destination-left img {
-  width: 480px;
-  height: 480px;
+  width: 400px;
+  height: 400px;
   padding: 0em;
   position: relative;
   z-index: -40;

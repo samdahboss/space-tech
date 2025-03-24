@@ -1,4 +1,5 @@
 const navToggle = document.querySelector(".mobile-nav-toggle");
+const main = document.getElementById('main')
 
 const toggleNav = () => {
   const mobileNav = document.querySelector("#mobile-nav");
@@ -17,5 +18,12 @@ navToggle.addEventListener("click", () => {
   navClosed = !navClosed;
   toggleNavToggleIcon();
   toggleNav();
-  
+});
+
+main.addEventListener("click", () => {
+  if (!navClosed) {
+    navClosed = !navClosed;
+    toggleNavToggleIcon();
+    toggleNav();
+  }
 });

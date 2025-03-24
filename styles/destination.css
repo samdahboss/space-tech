@@ -181,13 +181,13 @@ main {
     justify-content: center;
   }
   .destination-title {
-    margin-top: 5em;
+    margin-top: 2em;
     font-size: 1.2em;
     text-align: center;
   }
 
   .destination-main-title {
-    font-size: 4em;
+    font-size: 2.5em;
   }
   .destination-right-content {
     max-width: 327px;

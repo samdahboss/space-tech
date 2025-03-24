@@ -77,9 +77,14 @@ main {
   text-transform: uppercase;
 }
 
+
 .nav-link.active {
   border-bottom: 3px solid #fff;
 }
+.nav-link:hover:not(.active) {
+  border-bottom: 3px solid #ffffff5c;
+}
+
 .nav-link a {
   text-decoration: none !important;
   color: white;

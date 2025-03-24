@@ -86,6 +86,12 @@ main {
   border-radius: 50%;
   width: 15px;
   height: 15px;
+  border: none;
+}
+
+#crew-nav .nav-link:hover {
+  cursor: pointer;
+  background-color: #ffffff81;
 }
 
 #crew-nav .nav-link:hover{

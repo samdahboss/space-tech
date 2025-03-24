@@ -1,6 +1,5 @@
 body {
   background: url("../assets/home/background-home-desktop.jpg");
-  
 }
 
 .hero-container {
@@ -8,7 +7,7 @@ body {
   height: 100%;
 }
 
-.hero-content{
+.hero-content {
   display: flex;
   justify-content: center;
   align-items: end;
@@ -36,7 +35,7 @@ body {
   line-height: 180%;
 }
 
-.right-hero{
+.right-hero {
   width: 50%;
   padding: 0.8em 0em;
   display: flex;
@@ -47,12 +46,32 @@ body {
   width: 272px;
   height: 272px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff67;
   color: #000;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
+.explore-link a{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s all ease-in-out;
+}
+
+.explore-link a:hover {
+  border: 10px solid #ffffff14;
+  cursor: pointer;
+  width: 180px;
+  height: 180px;
+}
 .explore-link p {
   width: 100%;
   text-align: center;
@@ -82,11 +101,11 @@ body {
     font-size: 7em;
   }
 
-  .hero-description{
+  .hero-description {
     line-height: 150%;
     max-width: 512px;
   }
-  .right-hero{
+  .right-hero {
     width: 100%;
     padding: 0.8em 0em;
     display: flex;
@@ -100,7 +119,7 @@ body {
   body {
     background: url("../assets/home/background-home-mobile.jpg");
   }
-  .hero-subtitle{
+  .hero-subtitle {
     font-size: 2em;
   }
   .hero-title {

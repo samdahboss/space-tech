@@ -163,7 +163,7 @@ main {
 
   .crew-right img {
     max-width: 501px;
-    max-height: 446px;
+    max-height: 400px;
     height: 100%;
   }
 
@@ -200,7 +200,7 @@ main {
   }
 
   .crew-content{
-    padding: 2em 4em;
+    padding: 2em 2em;
   }
   .crew-text{
     gap: 1em;
@@ -209,16 +209,18 @@ main {
     text-align: center;
   }
   .crew-description{
-    line-height: 120%;
+    line-height: 100%;
   }
   .crew-main-title{
     font-size: 1.5em;
   }
   .crew-right img{
     max-width: 271px;
+    max-height: 350px;
   }
 
   #crew-nav{
     display: flex;
+    padding: 1em;
   }
 }

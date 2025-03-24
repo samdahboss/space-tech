@@ -1,9 +1,17 @@
 const navToggle = document.querySelector(".mobile-nav-toggle");
-const main = document.getElementById('main')
+const main = document.getElementById("main");
+const body = document.body;
+const mobileNav = document.querySelector("#mobile-nav");
 
 const toggleNav = () => {
-  const mobileNav = document.querySelector("#mobile-nav");
   mobileNav.classList.toggle("mobile-nav--hidden");
+
+  //Prevent Scrolling while mobile nav is open
+  if (navClosed) {
+    body.style.overflow = "";
+  } else {
+    body.style.overflowY = "hidden";
+  }
 };
 
 let navClosed = true;
@@ -14,6 +22,7 @@ const toggleNavToggleIcon = () => {
 
   navToggle.style.backgroundSize = "cover";
 };
+
 navToggle.addEventListener("click", () => {
   navClosed = !navClosed;
   toggleNavToggleIcon();
